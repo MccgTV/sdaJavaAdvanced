@@ -1,6 +1,13 @@
 package com.sda.zoo;
 
-public class Duck implements FlyBehavior {
+public class Duck extends Animal implements FlyBehavior {
+
+
+    @Override
+    public void eat(String something) {
+        System.out.println("Duck is eating " + something);
+    }
+
 
     @Override
     public void fly(double height) {

@@ -8,5 +8,14 @@ public class ZooApp {
         Duck duck = new Duck();
         duck.fly(120);
 
+        Air air = new Air();
+        air.flyInAir(eagle);
+        air.flyInAir(duck);
+
+        Animal anotherDuck = new Duck();
+        anotherDuck.eat("your dreams");
+
+        Animal anotherEagle = new Eagle();
+        anotherEagle.eat("your mother");
         }
 }
