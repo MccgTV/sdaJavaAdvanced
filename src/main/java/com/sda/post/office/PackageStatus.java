@@ -18,4 +18,11 @@ public enum PackageStatus {
     public String getMessage() {
         return message;
     }
+
+    @Override
+    public String toString() {
+        return "PackageStatus{" +
+                "message='" + message + '\'' +
+                '}';
+    }
 }
