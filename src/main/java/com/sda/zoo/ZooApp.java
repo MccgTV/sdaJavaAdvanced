@@ -17,5 +17,18 @@ public class ZooApp {
 
         Animal anotherEagle = new Eagle();
         anotherEagle.eat("your mother");
-        }
+
+        FlyBehavior plain = new FlyBehavior() {
+            @Override
+            public void fly(double h) {
+                if (h >= 3000) {
+                    System.out.println("Latam wysoko :O");
+                } else {
+                    System.out.println("Latam na wysokości 3000");
+                }
+            }
+        };
+        plain.fly(4000);  //obiekt klasy anonimowej
+
+    }
 }
