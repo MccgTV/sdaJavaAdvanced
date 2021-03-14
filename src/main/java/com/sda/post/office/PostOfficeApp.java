@@ -1,5 +1,8 @@
 package com.sda.post.office;
 
+import java.time.LocalDate;
+import java.time.Month;
+
 public class PostOfficeApp {
 
     public static void main(String[] args) {
@@ -22,5 +25,17 @@ public class PostOfficeApp {
             System.out.println(packageStatus);
         }
 
+        PackageStatus packageStatus = PackageStatus.valueOf("LOST");
+        System.out.println(packageStatus);
+
+        LocalDate data = LocalDate.of(1992, Month.DECEMBER, 12);
+        Month september = Month.of(9);
+        System.out.println(september);
+
+        PackageStatus[] errorStatuses = PackageStatus.getErrorStatuses();
+
+        for (PackageStatus obiekt : errorStatuses) {
+            System.out.println(obiekt);
+        }
     }
 }

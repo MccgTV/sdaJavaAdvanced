@@ -25,4 +25,9 @@ public enum PackageStatus {
                 "message='" + message + '\'' +
                 '}';
     }
+
+    public static PackageStatus[] getErrorStatuses() {
+        return new PackageStatus[]{LOST, RETURNED};
+    }
+
 }
