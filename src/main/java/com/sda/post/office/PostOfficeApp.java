@@ -39,5 +39,6 @@ public class PostOfficeApp {
         }
 
         System.out.println(PackageStatus.LOST.isError());
+        System.out.println(PackageStatus.SENT.isError());
     }
 }
