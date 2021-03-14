@@ -37,5 +37,7 @@ public class PostOfficeApp {
         for (PackageStatus obiekt : errorStatuses) {
             System.out.println(obiekt);
         }
+
+        System.out.println(PackageStatus.LOST.isError());
     }
 }

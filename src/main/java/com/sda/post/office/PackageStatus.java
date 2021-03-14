@@ -30,4 +30,12 @@ public enum PackageStatus {
         return new PackageStatus[]{LOST, RETURNED};
     }
 
+    public boolean isError() {
+        if (this == LOST || this == RETURNED) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    // return this == RETURNED || this == LOST;
 }
