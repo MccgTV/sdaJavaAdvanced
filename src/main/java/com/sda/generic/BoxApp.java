@@ -1,5 +1,8 @@
 package com.sda.generic;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BoxApp {
 
     public static void main(String[] args) {
@@ -16,5 +19,7 @@ public class BoxApp {
         System.out.println(boxLiczba.getItem());
         System.out.println(boxTekst.getItem());
         System.out.println(boxDouble.getItem());
+
+        List<String> texts = new ArrayList<>();
     }
 }
