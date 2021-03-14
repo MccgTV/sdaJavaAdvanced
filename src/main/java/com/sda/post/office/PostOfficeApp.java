@@ -27,17 +27,20 @@ public class PostOfficeApp {
 
         PackageStatus packageStatus = PackageStatus.valueOf("LOST");
         System.out.println(packageStatus);
+// Przykladowe uzycie enum
 
         LocalDate data = LocalDate.of(1992, Month.DECEMBER, 12);
         Month september = Month.of(9);
         System.out.println(september);
 
-        PackageStatus[] errorStatuses = PackageStatus.getErrorStatuses();
 
+        //Uzycie statycznej metody enum
+        PackageStatus[] errorStatuses = PackageStatus.getErrorStatuses();
         for (PackageStatus obiekt : errorStatuses) {
             System.out.println(obiekt);
         }
 
+        //Uzycie niestatycznej metody enum
         System.out.println(PackageStatus.LOST.isError());
         System.out.println(PackageStatus.SENT.isError());
     }
