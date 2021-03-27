@@ -7,6 +7,7 @@ public class Player implements Comparable<Player> {
     private String firstName;
     private String lastname;
     private int height;
+    private int earnings;
 
     public Player(String firstName, String lastname, int height) {
         this.firstName = firstName;
@@ -63,12 +64,6 @@ public class Player implements Comparable<Player> {
 
     @Override
     public int compareTo(Player otherPlayer) {
-        if(this.getHeight() > otherPlayer.getHeight()) {
-            return 1;
-        } else if (this.getHeight() == otherPlayer.getHeight()) {
-            return 0;
-        } else {
-            return -1;
-        }
+        return this.getHeight() - otherPlayer.getHeight();
     }
 }
