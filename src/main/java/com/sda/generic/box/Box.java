@@ -1,15 +1,14 @@
-package com.sda.generic;
+package com.sda.generic.box;
 
 public class Box<T> {
 
     T item;
 
-
-    T getItem() {
+    public T getItem() {
         return item;
     }
 
-    void setItem(T item) {
+    public void setItem(T item) {
         this.item = item;
     }
 
