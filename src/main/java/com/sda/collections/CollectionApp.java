@@ -1,9 +1,8 @@
 package com.sda.collections;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import com.sda.vehicle.Car;
+
+import java.util.*;
 
 public class CollectionApp {
 
@@ -35,5 +34,27 @@ public class CollectionApp {
         }
 
         //Map
+
+        Map<String, String> people = new HashMap<>();
+        people.put("Karol", "programista");
+        people.put("Ola","socjolożka");
+
+        //Iterowanie mapy po kluczach
+        for (String name : people.keySet()) {
+            System.out.println(name);
+            System.out.println("Praca " +name+ " to jest " +people.get(name));
+        }
+
+        // Iterowanie po wartościach
+        for (String job : people.values()) {
+            System.out.println(job);
+        }
+        // Print w nawiasie klamrowym
+        System.out.println(people);
+
+        // Iterowanie po parach
+        for (Map.Entry<String, String> pair : people.entrySet()) {
+            System.out.println("Imię " + pair.getKey() + " zawód " + pair.getValue());
+        }
     }
 }
