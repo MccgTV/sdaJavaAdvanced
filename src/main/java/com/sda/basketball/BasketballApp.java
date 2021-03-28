@@ -52,7 +52,7 @@ public class BasketballApp {
         Collections.sort(players, Collections.reverseOrder());
         System.out.println(players);
 
-        System.out.println(chicagoBulls.higherThan180());
+        System.out.println(chicagoBulls.getHigherThan180());
 
     }
 
