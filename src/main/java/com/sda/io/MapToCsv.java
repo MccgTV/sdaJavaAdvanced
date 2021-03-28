@@ -16,6 +16,7 @@ public class MapToCsv {
         values.put("Michał", "Bobowski");
         values.put("Franek", "Kimono");
         values.put("John", "Cena");
+        values.put("Alicja", "Oz");
 
         Path path = Paths.get("mapa.csv");
 
@@ -23,6 +24,19 @@ public class MapToCsv {
     }
 
     private static void writeToFile(Path path, Map<String, String> values) throws IOException {
+
+        // STARA METODA
+//        String dane = "";
+//        for (String name : values.keySet()) {
+//            String lastName = values.get(name);
+//
+//            dane = dane + name + "," + lastName + "\n";
+//        }
+//        try {
+//        Files.writeString(path,dane); }
+//        catch (IOException exception) {
+//            System.out.println("Wystąpił błąd " + exception);
+//        }
 
         BufferedWriter writer = Files.newBufferedWriter(path);
         for (String name : values.keySet()) {
