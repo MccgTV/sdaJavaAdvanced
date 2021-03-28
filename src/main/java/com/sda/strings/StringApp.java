@@ -30,6 +30,9 @@ public class StringApp {
         // Skrócona wersja - bez nawiasu, bo interfejs już mowi Javie, ze to String
         StringOperation shorten = text -> text.substring(0,3);
 
+        // Inferfejs implementowany za pomocą refencji do metody
+        StringOperation textToUpperCaseMethodReference = String::toUpperCase;
+
         for (String text : texts) {
             String modified = upperCase.modify(text);
             System.out.println(modified);

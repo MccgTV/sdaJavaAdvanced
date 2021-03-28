@@ -10,6 +10,7 @@ public class BasketballApp {
         Player jordan = new Player("Michael", "Jordan", 198);
         Player jordan1 = new Player("Michael", "Jordan",198);
         Player lebron = new Player("James", "LeBron",213);
+        Player lebron2 = new Player("James", "LeBron2",160);
 
         jordan.hashCode();
         System.out.println("Tacy sami: " +jordan.equals(jordan1));
@@ -17,13 +18,14 @@ public class BasketballApp {
         chicagoBulls.addPlayer(jordan);
         chicagoBulls.addPlayer(jordan1);
         chicagoBulls.addPlayer(lebron);
+        chicagoBulls.addPlayer(lebron2);
 
         System.out.println(chicagoBulls.getTeam());
 
         System.out.println(jordan.compareTo(jordan1));
 
 
-        System.out.println(chicagoBulls.getHigherThan200());
+      //  System.out.println(chicagoBulls.getHigherThan200());
 
         List<Player> players = new ArrayList<>();
         players.add(jordan);
@@ -49,6 +51,9 @@ public class BasketballApp {
         // odwrocona lista z Collections
         Collections.sort(players, Collections.reverseOrder());
         System.out.println(players);
+
+        System.out.println(chicagoBulls.higherThan180());
+
     }
 
 
