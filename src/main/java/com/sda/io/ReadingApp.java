@@ -9,6 +9,9 @@ import java.nio.file.Paths;
 public class ReadingApp {
     public static void main(String[] args) throws Exception {
 
+
+        // Jak odczytać plik tekstowy //
+
         Path path = Paths.get("input.txt");
 
         Reader reader = new FileReader(path.toFile());

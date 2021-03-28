@@ -1,3 +1,2 @@
-Hello World!
-Druga linijka.
-Trzecia linijka.
+Nowy tekst
+Druga linia
