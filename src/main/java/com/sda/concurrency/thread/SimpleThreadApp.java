@@ -4,9 +4,13 @@ public class SimpleThreadApp {
 
     public static void main(String[] args) {
 
-        SimpleThread simpleThread = new SimpleThread("1");
-        Thread thread = new Thread(simpleThread);
+        SleepingRunnable sleepingRunnable = new SleepingRunnable("1");
+        Thread thread = new Thread(new SleepingRunnable("2"));
+        Thread thread2 = new Thread(new SleepingRunnable("3"));
+        Thread thread3 = new Thread(new SleepingRunnable("4"));
 
-        thread.start();
+        thread.start(); // start 2 wątku
+        thread2.start();
+        thread3.start();
     }
 }
