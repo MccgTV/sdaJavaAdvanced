@@ -2,13 +2,13 @@ package com.sda.synchronization.counter;
 
 public class SimpleCounter {
 
-    int value;
+    private int value;
 
-    public void increment() {
+    synchronized void increment() {
         ++value;
     }
 
-    public void decrement() {
+    synchronized void decrement() {
         value--;
     }
 

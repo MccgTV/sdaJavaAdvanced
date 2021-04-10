@@ -25,6 +25,7 @@ public class CounterApp {
             System.out.println("Clean");
         }
 
-        System.out.println(simpleCounter);
+        // Wątki skończyły pracę, wyświetl wynik
+        System.out.println("Kierownik: wynik operacji " + simpleCounter.getValue());
     }
 }
